@@ -1,0 +1,29 @@
+.navigation-brand {
+  margin-left: 50px;
+  color: #f9994f;
+  font-size: 40px;
+  font-weight: 900;
+  text-decoration: none;
+}
+.navigation-brand:hover {
+  color: #f9994f;
+}
+.navigation {
+  margin: 0 10px;
+  color: tomato;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.navigation:hover {
+  color: tomato;
+  text-decoration: underline;
+}
+.nav-login {
+  color: tomato;
+  font-size: 20px;
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
