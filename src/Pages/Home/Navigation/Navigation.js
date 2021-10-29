@@ -19,6 +19,9 @@ const Navigation = () => {
                             <li className="nav-item">
                                 <NavLink to='aboutUs' className="navigation">About Us</NavLink>
                             </li>
+                            <li className="nav-item">
+                                <NavLink to='myOrders' className="navigation">My orders</NavLink>
+                            </li>
                         </ul>
                         <div className="d-flex">
                             <li className="nav-item list">

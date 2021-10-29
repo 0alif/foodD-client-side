@@ -13,8 +13,9 @@ const PlaceOrder = () => {
 
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
-        data.orderedItem = id;
-
+        data.status = 'pending';
+        data.item = product;
+        // add order in db
         fetch('http://localhost:5000/orders', {
             method: 'POST',
             headers: {

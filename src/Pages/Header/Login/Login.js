@@ -3,9 +3,9 @@ import './Login.css';
 
 const Login = () => {
     return (
-        <div>
-            <h2>Please login</h2>
-            <h5>Developer is sleeping...</h5>
+        <div className="App">
+            <h2>This is login </h2>
+            <p>Developer is sleeping...</p>
         </div>
     );
 };
