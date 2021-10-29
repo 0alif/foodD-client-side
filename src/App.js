@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import Home from './Pages/Home/Home/Home';
 import Login from './Pages/Login/Login';
+import PlaceOrder from './Pages/PlaceOrder/PlaceOrder';
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
           </Route>
           <Route path='/login'>
             <Login></Login>
+          </Route>
+          <Route path='/placeOrder/:id'>
+            <PlaceOrder></PlaceOrder>
           </Route>
         </Switch>
       </Router>
