@@ -27,3 +27,9 @@
 .list {
   list-style: none;
 }
+.logOut {
+  color: white;
+  font-weight: 500;
+  background-color: #f9994f;
+  border-radius: 20px;
+}

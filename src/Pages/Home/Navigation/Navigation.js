@@ -1,8 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import useAuth from '../../../hooks/useAuth';
 import './Navigation.css';
 
 const Navigation = () => {
+
+    const { user, logOut } = useAuth();
+
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -16,20 +20,26 @@ const Navigation = () => {
                             <li className="nav-item">
                                 <NavLink to='/home' className="navigation">Home</NavLink>
                             </li>
-                            <li className="nav-item">
+                            {user.email && <li className="nav-item">
                                 <NavLink to='myOrders' className="navigation">My Orders</NavLink>
-                            </li>
-                            <li className="nav-item">
+                            </li>}
+                            {user.email && <li className="nav-item">
                                 <NavLink to='manageAllOrders' className="navigation">Manage All Orders</NavLink>
-                            </li>
+                            </li>}
                             <li className="nav-item">
                                 <NavLink to='aboutUs' className="navigation">About Us</NavLink>
                             </li>
+                            {!user.email && <li className="nav-item list">
+                                <NavLink to='login' className="navigation me-4">Login</NavLink>
+                            </li>}
                         </ul>
                         <div className="d-flex">
-                            <li className="nav-item list">
-                                <NavLink to='login' className="navigation me-4">Login</NavLink>
-                            </li>
+                            {user.email && <li className="nav-item list">
+                                <p className="navigation me-4">{user.displayName}</p>
+                            </li>}
+                            {user.email && <li className="nav-item list">
+                                <button onClick={logOut} className="logOut btn">Log out</button>
+                            </li>}
                         </div>
                     </div>
                 </div>
