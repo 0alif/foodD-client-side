@@ -17,10 +17,13 @@ const Navigation = () => {
                                 <NavLink to='/home' className="navigation">Home</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to='aboutUs' className="navigation">About Us</NavLink>
+                                <NavLink to='myOrders' className="navigation">My Orders</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to='myOrders' className="navigation">My orders</NavLink>
+                                <NavLink to='manageAllOrders' className="navigation">Manage All Orders</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink to='aboutUs' className="navigation">About Us</NavLink>
                             </li>
                         </ul>
                         <div className="d-flex">

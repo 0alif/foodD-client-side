@@ -18,3 +18,8 @@
 .delete-btn:hover {
   background-color: #f54254;
 }
+.order-text {
+  text-align: center;
+  color: #f9994f;
+  font-size: 40px;
+}

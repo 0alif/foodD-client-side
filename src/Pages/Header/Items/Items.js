@@ -21,13 +21,13 @@ const Items = ({ product }) => {
 
     return (
         <div className="col-sm-12 col-md-6 col-lg-4">
-            <div className="">
+            <div>
                 <div className="item-card App">
                     <img className="img-fluid" src={img} alt="" />
                     <h3>{name}</h3>
                     <p>{details}</p>
                     <p><b>${price} - Delivery Fee</b></p>
-                    <button onClick={() => handleDelete(product._id)} className="btn delete-btn">Delete order</button>
+                    <button onClick={() => handleDelete(product._id)} className="btn delete-btn">Cancel order</button>
                 </div>
             </div>
         </div>
