@@ -1,0 +1,11 @@
+.hero-img img {
+  width: 100vh;
+  height: 90vh;
+}
+.hero-text {
+  text-align: center;
+  position: absolute;
+  width: 50%;
+  top: 40%;
+  left: 50%;
+}

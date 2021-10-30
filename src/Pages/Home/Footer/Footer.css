@@ -1,0 +1,21 @@
+.footer {
+  background-color: #15415b;
+}
+.footer-text {
+  padding-bottom: 20px;
+}
+.footer-text h2 {
+  font-weight: 600;
+  color: white;
+  margin-bottom: 20px;
+  padding-top: 50px;
+}
+.footer-text p {
+  color: white;
+}
+.footer-text img {
+  margin-right: 10px;
+}
+.coppy-text {
+  color: rgba(255, 255, 255, 0.623);
+}
