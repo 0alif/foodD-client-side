@@ -5,11 +5,12 @@
 .order-card p {
   width: 70%;
 }
-.order-text {
-  margin-top: 40px;
+.text-order {
+  margin: 20px 0;
   margin-bottom: 20px;
   color: #f9994f;
   font-weight: 500;
+  font-style: italic;
 }
 .handle-from input {
   width: 60%;

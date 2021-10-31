@@ -45,6 +45,13 @@ const Navigation = () => {
                   </NavLink>
                 </li>
               )}
+              {user.email && (
+                <li className="nav-item">
+                  <NavLink to="addService" className="navigation">
+                    Add New Service
+                  </NavLink>
+                </li>
+              )}
               <li className="nav-item">
                 <NavLink to="aboutUs" className="navigation">
                   About Us

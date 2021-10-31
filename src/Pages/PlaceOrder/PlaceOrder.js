@@ -61,7 +61,7 @@ const PlaceOrder = () => {
         </div>
         <div className="col-sm-12 col-md-6">
           <div className="container">
-            <h4 className="order-text">Place your order</h4>
+            <h2 className="text-order">Place your order</h2>
             <form className="handle-from" onSubmit={handleSubmit(onSubmit)}>
               <input
                 type="text"
