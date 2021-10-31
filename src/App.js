@@ -8,6 +8,7 @@ import Home from "./Pages/Home/Home/Home";
 import PrivateRoute from "./Pages/Home/PrivateRoute/PrivateRoute";
 import PlaceOrder from "./Pages/PlaceOrder/PlaceOrder";
 import NotFound from "./Pages/NotFound/NotFound";
+import AboutUs from "./Pages/AboutUs/AboutUs";
 
 function App() {
   return (
@@ -33,6 +34,9 @@ function App() {
             <PrivateRoute path="/manageAllOrders">
               <ManageAllOrders></ManageAllOrders>
             </PrivateRoute>
+            <Route path="/aboutUs">
+              <AboutUs></AboutUs>
+            </Route>
             <Route exact path="*">
               <NotFound></NotFound>
             </Route>

@@ -1,0 +1,33 @@
+.about {
+  text-align: center;
+  margin-top: 10%;
+}
+.about h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #1d1d1d;
+}
+.about p {
+  color: rgba(2, 1, 1, 0.37);
+  font-size: 22px;
+  font-weight: 500;
+}
+.about-text {
+  padding: 30px 0;
+}
+.about-text p {
+  margin: 30px 0;
+}
+.investors {
+  margin-bottom: 30px;
+}
+.investors h1 {
+  text-align: center;
+  font-size: 40px;
+  color: #1d1d1d;
+  font-weight: 700;
+}
+.investors img {
+  display: block;
+  margin: auto;
+}

@@ -5,11 +5,14 @@ import Footer from "../Home/Footer/Footer";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import "./PlaceOrder.css";
+import useAuth from "../../hooks/useAuth";
 
 const PlaceOrder = () => {
   const { id } = useParams();
   const [product, setProduct] = useState({});
   const { name, img, price, details } = product;
+
+  const { user } = useAuth();
 
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
@@ -64,9 +67,15 @@ const PlaceOrder = () => {
                 type="text"
                 {...register("name", { required: true })}
                 placeholder=" Name"
+                value={user.displayName}
               />
               <br />
-              <input type="email" {...register("email")} placeholder=" Email" />
+              <input
+                type="email"
+                {...register("email")}
+                placeholder=" Email"
+                value={user.email}
+              />
               <br />
               <input
                 type="text"

@@ -20,7 +20,7 @@ const MyOrders = () => {
   return (
     <div>
       <Navigation></Navigation>
-      <div>
+      <div className="pb-5">
         {orders.length > 0 ? (
           <h2 className="order-text">Your orders</h2>
         ) : (

@@ -36,7 +36,7 @@ const ManageAllOrders = () => {
   return (
     <div>
       <Navigation></Navigation>
-      <div className="row g-4  m-0">
+      <div className="row g-4  m-0 pb-5">
         {data.length > 0 ? (
           <h2 className="order-text">All orders</h2>
         ) : (
