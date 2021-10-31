@@ -1,0 +1,12 @@
+.not-found {
+  display: block;
+  margin: auto;
+  padding-bottom: 10px;
+  width: 100vh;
+}
+.not-found-btn {
+  display: block;
+  margin: auto;
+  color: white;
+  background-color: rgb(249, 153, 79);
+}
