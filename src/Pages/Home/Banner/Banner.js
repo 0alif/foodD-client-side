@@ -5,14 +5,8 @@ const Banner = () => {
 
     return (
         <div>
-            <div className="Row">
-                <h2>Banner</h2>
-                <div className="col-md-6">
-                    <h2>This </h2>
-                </div>
-                <div className="col-md-6">
-                    <h5>Banner</h5>
-                </div>
+            <div className="hero-img">
+                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam totam aspernatur, id voluptatibus, adipisci perferendis, quas ex tempora itaque quia beatae hic doloribus qui ullam provident magni atque saepe porro!</h3>
             </div>
         </div>
     );
